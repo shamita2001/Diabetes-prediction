@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HOME</title>
+        <style>
+            body{
+                background-image: url("{% static 'DiabetesPridct\images\diabetes.png'%}");
+                height: 500px; 
+                background-position: center;
+                background-repeat: no-repeat; 
+                background-size: cover;
+            }
+            .design{
+                transform: translateX(50%)  translateY(80%) ;
+                font-size: 35px;
+                align-content: center;
+            }
+            input[type="submit"] {
+                width: 150px;
+                height: 50px;
+                padding: 10px;
+                font-size: 25px;
+                transform: translateX(100%);
+              }
+        </style>
+    </head>
+    <body>
+        <div class="design">
+            <h1><i><u>Diabetes Prediction</u></i></h1>
+            <form action="predict">
+            <input type="submit" value="Start">
+            </form>
+        </div>
+    </body>
+</html>
